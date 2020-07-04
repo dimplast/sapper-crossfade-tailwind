@@ -1,0 +1,50 @@
+export const dest = [
+    {
+                id:1,
+      city: 'Toronto',
+      averagePrice: 120,
+      propertyCount: 76,
+      imageUrl: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
+      imageAlt: 'Toronto skyline',
+    },
+    {
+                id:2,
+      city: 'Malibu',
+      averagePrice: 215,
+      propertyCount: 43,
+      imageUrl: 'https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
+      imageAlt: 'Cliff in Malibu',
+    },
+    {
+                id:3,
+      city: 'Chicago',
+      averagePrice: 130,
+      propertyCount: 115,
+      imageUrl: 'https://images.unsplash.com/photo-1563231333-0473bb525c8b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80',
+      imageAlt: 'Chicago skyline',
+    },
+    {
+                id:4,
+      city: 'Seattle',
+      averagePrice: 135,
+      propertyCount: 63,
+      imageUrl: 'https://images.unsplash.com/photo-1493246318656-5bfd4cfb29b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
+      imageAlt: 'Seattle skyline',
+    },
+    {
+                id:5,
+      city: 'Colorado',
+      averagePrice: 85,
+      propertyCount: 47,
+      imageUrl: 'https://images.unsplash.com/photo-1568484669027-dd01f0ebd5c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
+      imageAlt: 'Lake in Colorado',
+    },
+    {
+                id:6,
+      city: 'Miami',
+      averagePrice: 115,
+      propertyCount: 86,
+      imageUrl: 'https://images.unsplash.com/photo-1578439297699-eb414262c2de?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1307&q=80',
+      imageAlt: 'Beach in Miami',
+    }
+]

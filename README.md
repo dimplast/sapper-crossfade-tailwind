@@ -111,3 +111,4 @@ npm install -D @sveltejs/svelte-virtual-list
 Sapper is in early development, and may have the odd rough edge here and there. Please be vocal over on the [Sapper issue tracker](https://github.com/sveltejs/sapper/issues).
 "# sapper-tailwind" 
 "# svelte-crossfade-tailwind" 
+"# svelte-crossfade-tailwind" 

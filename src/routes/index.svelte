@@ -1,46 +1,25 @@
-<style>
-	h1, figure, p {
-		text-align: center;
-		margin: 0 auto;
-	}
+<script>
+	import {goto} from '@sapper/app';
+	import {selectedStore} from './stores';
+	import { send, receive }  from '../cross';
 
-	h1 {
-		font-size: 2.8em;
-		text-transform: uppercase;
-		font-weight: 700;
-		margin: 0 0 0.5em 0;
-	}
+	import { crossfade, scale } from 'svelte/transition';
+	import {dest} from '../dest';
+	
+</script>
 
-	figure {
-		margin: 0 0 1em 0;
-	}
 
-	img {
-		width: 100%;
-		max-width: 400px;
-		margin: 0 0 1em 0;
-	}
 
-	p {
-		margin: 1em auto;
-	}
-
-	@media (min-width: 480px) {
-		h1 {
-			font-size: 4em;
-		}
-	}
-</style>
-
-<svelte:head>
-	<title>Sapper project template</title>
-</svelte:head>
-
-<h1>Great success!</h1>
-
-<figure>
-	<img alt='Success Kid' src='successkid.jpg'>
-	<figcaption>Have fun with Sapper!</figcaption>
-</figure>
-
-<p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
+<div class="absolute flex-col">
+	{#each dest as item, id}
+		<div class="flex p-1" on:click={()=>{selectedStore.set(item); goto('/about')}}>
+			<div class="cursor-pointer" in:receive={{key:item.id}}	out:send={{key:item.id}}>
+				<img class="h-32 w-32" src={item.imageUrl} alt={item.imageAlt}>
+			</div>
+			<div in:receive={{key:item.city}}	out:send={{key:item.city}}>
+				<h3 class="text-lg ml-2 font-semibold text-gray-800" >{ item.city }</h3>
+				<p class="text-gray-600 ml-2">${ item.averagePrice } / night average</p>	
+			</div>
+		</div>
+	{/each}
+</div>
